@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="306.0" prefWidth="569.0" vgap="10" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.lab.Controller.HelloController">
+    <children>
+        <Pane prefHeight="563.0" prefWidth="925.0" style="-fx-background-color: #023020;">
+            <children>
+                <Button fx:id="startButton" layoutX="38.0" layoutY="194.0" mnemonicParsing="false" onAction="#StartProgress" prefHeight="69.0" prefWidth="120.0" text="старт" textAlignment="JUSTIFY">
+                    <font>
+                        <Font name="Times New Roman" size="32.0" />
+                    </font>
+                </Button>
+                <ProgressBar fx:id="pBar" layoutX="38.0" layoutY="121.0" prefHeight="32.0" prefWidth="431.0" progress="0.0" />
+            <Text fill="WHITE" layoutX="38.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="выполнение">
+               <font>
+                  <Font name="Times New Roman" size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="pauseButton" layoutX="217.0" layoutY="194.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="135.0" text="пауза" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Times New Roman" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="StopButton" layoutX="416.0" layoutY="194.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="107.0" text="стоп" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Times New Roman" size="32.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
